@@ -73,7 +73,7 @@ jobs:
 
   e2e:
     needs: [lint, build]
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -97,7 +97,7 @@ jobs:
 
   deploy:
     needs: [test, e2e]
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
